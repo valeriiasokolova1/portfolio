@@ -19,3 +19,7 @@
 ### Russian, Ukrainian, English
 ## PERSONAL QUALITIES
 ### сommunication, responsibility, attentiveness
+## Introducing
+### I am comfortable working in a structured environment, where each task is assigned to a specific employee / group, there is a certain framework for their implementation. I appreciate constructive criticism and am ready to adjust the work. I value honesty and work ethic.
+### I do my best when I am allowed to demonstrate my own ingenuity in the exchange of ideas, discussion and joint decision making in the group.
+### It is important for me to divide the work into stages and separate them in time - doing them well and on time brings me pleasure.
