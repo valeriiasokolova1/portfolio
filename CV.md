@@ -8,8 +8,8 @@
 ### MASTER'S DEGREE - National University of Kharkiv 2016-2018
 ## WORK EXPERIENCE
 ### 2016-2017 - Administrator in the beauty salon
-### 2017-2021 - Fitness trainer
-### 2021-now - Economist of the Financial Monitoring Department at the Bank
+### 2017-2022 - Fitness trainer
+### 2021-2022 - Economist of the Financial Monitoring Department at the Bank
 ## SKILLS
 ### GIT - basic level
 ### MARKDOWN - basic level
