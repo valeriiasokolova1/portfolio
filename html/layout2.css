@@ -30,7 +30,6 @@ h2 {
 .main-container {
   background-color: cornsilk;
   flex: 1;
-  /*height: 100%;*/
   height: calc(100vh - 70px);
 }
 
