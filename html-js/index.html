@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- <link rel="stylesheet" href="index.css" /> -->
+  <script>
+      function sum() {
+        const value1 = +document.getElementById('v1').value;
+        const value2 = +document.getElementById('v2').value;
+        const total = value1 + value2;
+        document.getElementById('v3').value = total;
+        document.getElementById('result').innerHTML = `Result is <i>${total}</i>`;
+      }
+  </script>
+</head>
+
+<body>
+<input id="v1" />
+<input id="v2" />
+<input type="button" onclick="sum()" value="calculate sum" />
+<input id="v3" readonly />
+<hr>
+<div id="result"></div>
+</body>
+
+</html>
