@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- <link rel="stylesheet" href="index.css" /> -->
+  <script>
+      function doBlock() {
+          document.getElementById('container').style.display = 'block';
+      }
+
+      function doFlexRow() {
+          document.getElementById('container').style.display = 'flex';
+          document.getElementById('container').style.flexDirection = 'row';
+      }
+
+      function doFlexColumn() {
+          document.getElementById('container').style.display = 'flex';
+          document.getElementById('container').style.flexDirection = 'column';
+      }
+
+      function doReverse() {
+        document.getElementById('container').style.display = 'flex';
+        document.getElementById('container').style.flexDirection = 'row-reverse';
+      }
+
+      function doColor() {
+          const colorValue = document.getElementById('first').style.color;
+          if (colorValue == 'red') {
+            document.getElementById('first').style.color = 'black';
+          } else {
+            document.getElementById('first').style.color = 'red';     
+          }
+      }
+
+      function doHide() {
+        document.getElementById('container').style.display = 'none';
+      }
+  </script>
+</head>
+
+<body>
+    <input type="button" value="Block" onclick="doBlock()">
+    <input type="button" value="Flex - Row" onclick="doFlexRow()">
+    <input type="button" value="Flex - Column" onclick="doFlexColumn()">
+    <input type="button" value="Reverse" onclick="doReverse()">
+    <input type="button" value="Red First" onclick="doColor()">
+    <input type="button" value="Hide All" onclick="doHide()">
+    <hr>
+    <div id="container" style="display: block;">
+        <div id="first">1</div>
+        <div>2</div>
+        <div style="flex-grow: 1;">3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+</body>
+
+</html>

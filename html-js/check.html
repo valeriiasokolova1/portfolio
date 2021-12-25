@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- <link rel="stylesheet" href="index.css" /> -->
+  <script>
+      const goods=[];
+function view(){
+    let result = '';
+    for(const item of goods){
+      result = result+`${item.name} | ${item.price} | ${item.quantity} | ${item.price*item.quantity}<br>`;
+    }
+    document.getElementById('result').innerHTML = result;
+}
+function addnewposition() {
+    const name=document.getElementById('name').value;
+    const price=+document.getElementById('price').value;
+    const quantity=+document.getElementById('quantity').value;
+    goods.push({
+        name:name,
+        price:price,
+        quantity:quantity
+    });
+    document.getElementById('name').value = '';
+    document.getElementById('price').value = '';
+    document.getElementById('quantity').value = '';
+    // console.log(goods);
+    // document.getElementById('result').innerHTML=document.getElementById('result').innerHTML+`${name} | ${price} | ${quantity} | ${price*quantity}<br>`;
+    view();
+    calculateTotal();
+
+}
+function calculateTotal() {
+    let result=0;
+    for(const item of goods) {
+        result=result+item.price*item.quantity;
+    }
+    document.getElementById('total').innerHTML = result;
+
+
+}
+
+
+
+  </script>
+</head>
+
+<body>
+name: <input id='name' size='50'>
+<br> 
+price: <input id ='price' size='10'>
+<br>
+quantity: <input id='quantity' size='10'>
+<br>
+<input type='button' value='add' onclick='addnewposition()'>
+<hr>
+<div id='result'> </div>
+<hr>
+<div>Total: <span id='total'>0</span></div>
+<input type='button' value='check'>
+</body>
+
+</html>
